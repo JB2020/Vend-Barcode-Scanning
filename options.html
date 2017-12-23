@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!--
+ *  Injects the Campus Trading barcode reader into Vend's webregister UI.  This file displays the Chrome extension option dialog.
+ *  Copyright Campus Trading, 2017
+-->
+
+<html>
+    <head>
+        <title>Vend Barcode Integration Config</title>
+    </head>
+    <body style="width: 600px;">
+        <h1>Vend Barcode Integration Config</h1>
+        
+        <h2>Barcode Definition</h2>
+        
+        <label for="barcode_len">Length</label>
+        <input id="barcode_len" name="barcode_len" type="number" step="1" min="1" max="24"><br><br>
+        
+        <label for="barcode_sku_start">SKU start position</label>
+        <input id="barcode_sku_start" name="barcode_sku_start" type="number" step="1" min="1" max="24"><br>
+
+        <label for="barcode_sku_stop">SKU stop position</label>
+        <input id="barcode_sku_stop" name="barcode_sku_stop" type="number" step="1" min="1" max="24"><br><br>
+        
+        <label for="barcode_price_start">Price start position</label>
+        <input id="barcode_price_start" name="barcode_price_start" type="number" step="1" min="1" max="24"><br>
+
+        <label for="barcode_price_stop">Price stop position</label>
+        <input id="barcode_price_stop" name="barcode_price_stop" type="number" step="1" min="1" max="24"><br><br>    
+        
+        <br>
+        
+        <div id="status"></div>
+        <button id="save">Save Config</button>
+
+        <script src="options.js"></script>
+    </body>
+</html>

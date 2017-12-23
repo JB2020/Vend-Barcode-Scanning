@@ -1,0 +1,25 @@
+{
+    "name": "Vend Barcode Integration",
+    "version": "2.0",
+    "manifest_version": 2,
+
+    "content_scripts": [{
+        "js": ["jquery.min.js","contentscript.js","barcode_detection.js"],
+        "matches": ["https://*.vendhq.com/", "https://*.vendhq.com/webregister/"]
+    }],
+    "web_accessible_resources": ["jquery.min.js","script.js","barcode_detection.js"],
+
+    "description": "Modify's the Vend webregister UI, adding a sku and price barcode reader. Copyright Campus Trading, 2017",
+    "icons": {"128": "icon128.png"},
+
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true
+    },
+
+    "permissions": [
+        "storage"
+    ],
+    
+    "offline_enabled": true
+}
